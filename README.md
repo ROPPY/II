@@ -1,6 +1,6 @@
 # II
-Here you are on a basic interface in progress to be an App linked on DB...
-App for a private feminine competition of miniture foot on specials ''futebol americano de mesa'' played by girls only!
-As y like you can contact me to help this project to grow up!
+This is a draft for an App;
+Designed for a private feminine competition of miniture foot on special: ''futebol americano de mesa'' played by girls, women, ladies, only!
+As y like, you can help for this project.
 Contact ROPPY
 Thanks
