@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="II : Welcome to the competition FEMINIFOOT">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Welcome to the competition FEMINIFOOT</title>
+  </head>
+
+  <body>
+
+ <!-- COMING SOON -->  
+    <script>
+    var http = require('http');
+      http.createServer(function(request, response) {
+        var headers = request.headers;
+        var method = request.method;
+        var url = request.url;
+        var body = [];
+        request.on('error', function(err) {
+          console.error(err);
+        }).on('data', function(chunk) {
+          body.push(chunk);
+        }).on('end', function() {
+          body = Buffer.concat(body).toString();
+          // BEGINNING OF NEW STUFF
+      
+          response.on('error', function(err) {
+            console.error(err);
+          });
+      
+          response.statusCode = 200;
+          response.setHeader('Content-Type', 'application/json');
+          // Note: the 2 lines above could be replaced with this next one:
+          // response.writeHead(200, {'Content-Type': 'application/json'})
+      
+          var responseBody = {
+            headers: headers,
+            method: method,
+            url: url,
+            body: body
+          };
+      
+          response.write(JSON.stringify(responseBody));
+          response.end();
+          // Note: the 2 lines above could be replaced with this next one:
+          // response.end(JSON.stringify(responseBody))
+      
+          // END OF NEW STUFF
+        });
+      }).listen(8080);
+      </script>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ROPPY/II">View on GitHub</a>
+
+          <h1 id="project_title">FEMINIFOOT</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ROPPY/II/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ROPPY/II/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="Welcome to the competition FEMINIFOOT" class="anchor" href="http://roppy.github.io/II/" aria-hidden="true"><span class="octicon octicon-link">Welcome to the competition FEMINIFOOT</span></a></h3>
+
+<h1>
+<a id="ONLY FOR WOMEN BY TEAM OR SINGLE" class="anchor" href="#ONLY FOR WOMEN BY TEAM OR SINGLE" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>ONLY FOR WOMEN BY TEAM OR SINGLE</strong>
+</h1>
+<form action="on clic" method="post">
+
+<input type="file" name="Sign in" />
+<link rel="1" type="Z" href="http://roppy.github.io/II/" />
+
+
+
+
+
+
+
+
+
+</form>
+  <ul><h3>
+  <li>Sign in</li>
+  <li>Join us</li>
+  <li>Register your Device</li>
+  <li>Register a score</li>
+  <li>Consult scores</li>
+  <li>Contact</li>
+  </ul></h3>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">II maintained by <a href="https://github.com/ROPPY">ROPPY</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
