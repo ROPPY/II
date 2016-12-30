@@ -16,7 +16,7 @@ navigator.serviceWorker.register('/sw.js').then(function(registration) {
         if (/\.jpg$/.test(event.request.url)) {    
             event.respondWith(                
              
-            fetch('/images/unicorn.jpg, {          
+            fetch('images/unicorn.jpg, {          
                 mode: 'no-cors'      
             })     
         );   
